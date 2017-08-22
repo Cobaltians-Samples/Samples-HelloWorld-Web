@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
     <link rel="stylesheet" href="style.css"/>
+	<script type="text/javascript" src="Cobalt-Web/cobalt.min.js"></script>
+	
 </head>
 <body>
 <p>Welcome to the HelloWorld app&nbsp;! Please use a pull-to-refresh gesture to change the message below. If it works,
@@ -15,7 +17,6 @@
 <script>
     cobalt.init({
         debug: true,
-        //debugInBrowser:true,
         events: {
             "pullToRefresh": function (data, callback) {
                 cobalt.log('Refresh asked...');
@@ -23,7 +24,6 @@
             }
         }
     });
-
     var messages = ["Hello!", "Yes it works!", "Bonjour !", "guten Tag!", "Ola !"],
         i = 0,
         len = messages.length,
