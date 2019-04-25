@@ -1,0 +1,15 @@
+{
+  "controllers": {
+    "default": {
+      "pullToRefresh": true,
+      "bars": {
+        "title": "Hello World",
+        "color": "#3498DB",
+        "visible": {
+          "top": true,
+          "bottom": false
+        }
+      }
+    }
+  }
+}
